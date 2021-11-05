@@ -1,0 +1,31 @@
+<div id="modal" class="hide">
+    <div class="content">
+        <h1>Nova ideia</h1>
+        <form action="" method="POST" onsubmit="return checkFields(event)">
+            <div class="input">
+                <label for="title">Título da ideia</label>
+                <input type="text" name="title">
+            </div>
+            <div class="input">
+                <label for="category">Categoria</label>
+                <input type="text" name="category">
+            </div>
+            <div class="input">
+                <label for="image">Link da imagem</label>
+                <input type="url" name="image">
+            </div>
+            <div class="input">
+                <label for="descripition">Digite uma
+                    descrição para está ideia
+                </label>
+                <textarea name="descripition" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <label for="link">Link da ideia</label>
+                <input type="text" name="link">
+            </div>
+            <a href="#" onclick="onOFF()">Voltar</a>
+            <button>Salvar</button>
+        </form>
+    </div>
+</div>

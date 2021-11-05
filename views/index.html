@@ -1,0 +1,30 @@
+{%extends "layout.html"%}
+{% set divClass = "container" %}
+{%block content%}
+<section id="intro">
+    <header id="cabecalho">
+        <a href="/"><img src="/image/27pdZLL - Imgur (1).png" alt="Imagem da Logo"></a>
+    </header>
+    <main>
+        <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+        <p>Por isso, iremos catalogar ideias<b>, brincadeiras, filmes,
+                livros, cursos, dicas</b> e tudo o que for necessário para
+            tornar este momento mais interessante.
+        </p>
+        <p>Comece clicando em <a href="">ver ideias</a> para ver as
+            ideias cadastradas e contribua <a href="">adicionando a sua ideia</a>
+        </p>
+    </main>
+    <section id="button">
+        <button onclick="onOFF()" class="oneB">+ Adicionar Ideias</button>
+        <a href="/ideias" class="button">Ver Ideias</a>
+    </section>
+    <footer id="footer">
+        <a href="https://rocketseat.com.br/" target="_blank">Com 💙 RocketSeat </a>
+    </footer>
+    <script src="/javascript/index.js"></script>
+</section>
+<section id="last-ideias">
+    {%include "ideia.html"%}
+</section>
+{%endblock%}

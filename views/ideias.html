@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+{% set pageId = "page-ideias" %}
+{%block content%}
+        <header>
+            <a href="/"><img src="/image/27pdZLL - Imgur (1).png" alt="Imagem da Logo"></a>
+            <nav>
+                <li><a href="/" class="button">Início</a></li>
+                <li><a href="#" onclick="onOFF()" class="button">Nova Ideia</a></li>
+
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideias">
+                {%include "ideia.html"%}
+            </section>
+            <footer id="footer"><a href="https://rocketseat.com.br/" target="_blank">Com 💙 RocketSeat </a></footer>
+        </main>
+        <script src="/javascript/index.js"></script>
+{%endblock%}
